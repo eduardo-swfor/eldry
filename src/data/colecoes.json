@@ -1,0 +1,18 @@
+{
+    "APONTAMENTOS": "apontamentos"
+    ,"OCORRENCIAS": "ocorrencias"
+    ,"PERFIL_USUARIOS": "perfil_usuarios"
+    ,"ULTIMOS_RESPONSAVEIS": "ultimos_responsaveis"
+    ,"RESPONSAVEIS": "responsaveis"
+    ,"TIPO_COMPROVANTES": "tipo_comprovantes"
+    ,"MENSAGENS": "mensagens"
+    ,"ARQUIVOS": "arquivos"
+    ,"DOCUMENTOS": "documentos"
+    ,"COMPROVANTES": "comprovantes"
+    ,"USUARIOS": "usuarios"
+    ,"TOKENS_SENHAS": "tokens_senhas"
+    ,"BANCOS": "bancos"
+    ,"EMPRESAS": "empresas"
+    ,"FERIADOS": "feriados"
+    ,"REPOSTAS_AUTOMATICAS": "respostas_automaticas"
+}

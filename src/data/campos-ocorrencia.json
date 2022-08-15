@@ -1,0 +1,37 @@
+{
+     "empresa": {"tipo": "empresa", "titulo": "Empresa"}
+    ,"numeroEflow": {"tipo": "string", "titulo": "Num e-flow"}
+    ,"numeroNf": {"tipo": "string", "titulo": "Num NF"}
+    ,"nomeFornecedor": {"tipo": "string", "titulo": "Nome fornecedor"}
+    ,"motivo": {"tipo": "textarea", "titulo": "Motivo"}
+    ,"dataEnvioDocumento": {"tipo": "date", "titulo": "Data envio documento"}
+    ,"cnpjFornecedor": {"tipo": "cnpj", "titulo": "CNPJ fornecedor"}
+    ,"codigoFornecedor": {"tipo": "string", "titulo": "Cod fornecedor"}
+    ,"numeroDocumentoFiscal": {"tipo": "string", "titulo": "Num doc fiscal"}
+    ,"numeroPedido": {"tipo": "string", "titulo": "Num pedido"}
+    ,"detalhesSolicitacao": {"tipo": "textarea", "titulo": "Detalhes solicitação"}
+    ,"tipoLancamento": {"tipo": "combo", "titulo": "Tipo lançamento", "itens": ["PDP", "NF"]}
+    ,"empresas": {"tipo": "empresas", "titulo": "Empresas selecionadas"}
+    ,"agencia": {"tipo": "string", "titulo": "Agência"}
+    ,"contaCorrente": {"tipo": "string", "titulo": "CC"}
+    ,"digito": {"tipo": "string", "titulo": "Dig."}
+    ,"codigoBanco": {"tipo": "string", "titulo": "Cód banco"}
+    ,"nomeBanco": {"tipo": "string", "titulo": "Nome banco"}
+    ,"observacoes": {"tipo": "textarea", "titulo": "Observações"}
+    ,"numeroPdps": {"tipo": "textarea", "titulo": "Número das PDPs"}
+    ,"vencimento": {"tipo": "date", "titulo": "Vencimento"}
+    ,"numeroLancamentoSap": {"tipo": "string", "titulo": "Num lanc SAP"}
+    ,"dataPropostaPagamento": {"tipo": "date", "titulo": "Data prop pgto"}
+    ,"oip": {"tipo": "string", "titulo": "OIP"}
+    ,"numeroCliente": {"tipo": "string", "titulo": "Número cliente"}
+    ,"numeroOrdemVenda": {"tipo": "string", "titulo": "Número ordem venda"}
+    ,"numeroContrato": {"tipo": "textarea", "titulo": "Número contrato"}
+    ,"tipoModeloPdp": {"tipo": "combo", "titulo": "D/C", "itens": ["31 -PAGAMENTO", "21 - DESCONTO"]}
+    ,"classeCusto": {"tipo": "string", "titulo": "Classe custo"}
+    ,"ano": {"tipo": "string", "titulo": "Ano"}
+    ,"modelo": {"tipo": "string", "titulo": "Modelo"}
+    ,"circuito": {"tipo": "string", "titulo": "Circuito"}
+    ,"brUsuario": {"tipo": "string", "titulo": "BR usuário"}
+    ,"upload": {"tipo": "upload", "titulo": "Arquivo anexo"}
+    ,"documentoFornecedor": {"tipo": "string", "titulo": "CPF/CNPJ fornecedor"}
+}

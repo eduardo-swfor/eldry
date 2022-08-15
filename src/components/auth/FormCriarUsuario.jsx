@@ -29,7 +29,7 @@ export default function FormCriarUsuario({voltar}) {
             const filtrado = response.data.filter(item => estado.email.toUpperCase().endsWith(item.toUpperCase()))
 
             if (!filtrado || filtrado.length == 0) {
-                setErro('O cadastro deste e-mail não é permitido no portal AFC! Em caso de dúvidas entre em contato com a área de pagamentos')
+                setErro('O cadastro deste e-mail não é permitido no portal! Em caso de dúvidas entre em contato com a área de pagamentos')
             } else {
                 const retorno = await axios.post(endpoints.USUARIO, { criarUsuario:true, email: estado.email })
                 const dados = retorno.data
@@ -63,7 +63,7 @@ export default function FormCriarUsuario({voltar}) {
                     <div className='flex w-full items-center border-b pb-1'>
                         {IconeUsuario()}
                         <div className='relative -ml-1 mr-2'>{IconeSoma(3)}</div>
-                        <Subtitulo className='ml-2 mt-2'>Criar novo login para o portal AFC</Subtitulo>
+                        <Subtitulo className='ml-2 mt-2'>Criar novo login para o portal</Subtitulo>
                     </div>
 
                     {

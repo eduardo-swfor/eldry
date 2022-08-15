@@ -47,28 +47,6 @@ export default function Home() {
       if (retorno.length > 0) {
         //setImagemMensagem(`https://${process.env.NEXT_PUBLIC_AWS_BUCKET}.${process.env.NEXT_PUBLIC_AWS_STORAGE_ENDPOINT}/${retorno[0].arquivo.diretorio}/${retorno[0].arquivo.nomeGravado}`)
         setImagemMensagem(retorno[0].arquivo)
-        /*
-        const jsx = (
-          <div className='flex flex-row w-full h-full'>
-            <Image 
-              src={
-                process.env.AWS_CDN_STORAGE_ENDPOINT ? 
-                  `https://${process.env.NEXT_PUBLIC_AWS_BUCKET}.${process.env.NEXT_PUBLIC_AWS_CDN_STORAGE_ENDPOINT}/${retorno[0].arquivo.diretorio}/${retorno[0].arquivo.nomeGravado}` :
-                  `https://${process.env.NEXT_PUBLIC_AWS_BUCKET}.${process.env.NEXT_PUBLIC_AWS_STORAGE_ENDPOINT}/${retorno[0].arquivo.diretorio}/${retorno[0].arquivo.nomeGravado}` 
-              }
-              layout='fill'
-              quality={100}
-              objectFit='contain'
-              loading='eager'
-              priority={true}
-              alt='Mensagem AFC'
-            />
-            
-          </div>
-        )
- 
-        exibirModal("Mensagem", jsx, 'w-10/12 h-5/6')
-        */
       }
     })
     }
@@ -110,7 +88,7 @@ export default function Home() {
         />
 
         <Titulo className='ml-4'>
-          {'A mensagem abaixo foi registrada pelo AFC, para voltar para o sistema use o botão ao lado'}
+          {'A mensagem abaixo foi registrada, para voltar para o sistema use o botão ao lado'}
         </Titulo>
       </div>
       <BotaoDownloadArquivo
@@ -129,7 +107,7 @@ export default function Home() {
             objectFit='initial'
             loading='eager'
             priority={true}
-            alt='Mensagem AFC'
+            alt='Mensagem'
             height={'100%'}
             width={'100%'}
           />

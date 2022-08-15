@@ -17,7 +17,7 @@ export default function NavBar({clickMenu=null}) {
             <div className={`
                 flex flex-row`}
             >
-                <Titulo className='text-white font-bold'>Portal AFC</Titulo>
+                <Titulo className='text-white font-bold'>Portal Eldry</Titulo>
 
             </div>
             <div>                

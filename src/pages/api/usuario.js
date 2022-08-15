@@ -63,7 +63,7 @@ async function alteraSenhaUsuario(email) {
     registro.senha = await hashSenha(senha)
 
     alteraRegistro(colecoes.USUARIOS, registro, '<SEM EMAIL>').then(retorno =>{
-        enviaEmail(email, 'Alteração de senha - Portal AFC', `
+        enviaEmail(email, 'Alteração de senha - Portal Eldry', `
             Sua senha foi alterada com sucesso, por favor guarde os dados abaixo:            
             <br/><br/><b>Usuário:</b>${email}
             <br/><b>Senha:</b><pre>${senha}</pre>
@@ -106,8 +106,8 @@ apiRoute.post(async (req, res) => {
             const senhaCriprografada = await hashSenha(senhaGerada)
 
             criaUsuario(email, senhaCriprografada).then(retorno => {
-                enviaEmail(email, 'Cadastro Portal AFC', `
-                    Seu e-mail foi cadastrado com sucesso no portal afc, por favor guarde os dados abaixo:            
+                enviaEmail(email, 'Cadastro portal', `
+                    Seu e-mail foi cadastrado com sucesso no portal, por favor guarde os dados abaixo:            
                     <br/><br/><b>Usuário:</b>${email}
                     <br/><b>Senha:</b><pre>${senhaGerada}</pre>
                 `)

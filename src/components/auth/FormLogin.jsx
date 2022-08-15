@@ -34,7 +34,7 @@ export default function FormLogin({novoUsuario, esqueceuSenha}) {
 
                     <div className='flex w-full items-center border-b pb-1'>
                         {IconeCadeado()}
-                        <Subtitulo className='ml-2 mt-2'>Login portal AFC</Subtitulo>
+                        <Subtitulo className='ml-2 mt-2'>Login portal</Subtitulo>
                     </div>
 
                     {

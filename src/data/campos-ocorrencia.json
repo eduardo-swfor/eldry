@@ -34,4 +34,11 @@
     ,"brUsuario": {"tipo": "string", "titulo": "BR usuário"}
     ,"upload": {"tipo": "upload", "titulo": "Arquivo anexo"}
     ,"documentoFornecedor": {"tipo": "string", "titulo": "CPF/CNPJ fornecedor"}
+    ,"nomeUsuario": {"tipo": "string", "titulo": "Nome usuário"}
+    ,"aplicacao": {"tipo": "string", "titulo": "Aplicação"}
+    ,"emailLogin": {"tipo": "string", "titulo": "E-mail login"}
+    ,"telefoneContato": {"tipo": "string", "titulo": "Telefone contato"}
+    ,"descricao": {"tipo": "textarea", "titulo": "Descrição"}
+    ,"novoEmail": {"tipo": "string", "titulo": "Novo e-mail"}
+    ,"emailUsuario": {"tipo": "string", "titulo": "E-mail usuário"}
 }

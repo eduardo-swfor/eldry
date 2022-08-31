@@ -1,287 +1,58 @@
 [
     {
         "codigo": 1,
-        "descricao": "Recepção de NFs",
+        "descricao": "Sistemas",
         "itens": [
             {
                 "codigo": 1.1,
-                "descricao": "NF enviada e não migrada para o SAP",
+                "descricao": "Reset de senha",
                 "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "dataEnvioDocumento", "required": true, "span": 2}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}
-                    ,{"nome": "numeroDocumentoFiscal", "required": true, "span": 2}
-                    ,{"nome": "cnpjFornecedor", "required": true, "span": 2}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": true, "span": 6}
+                    {"nome": "nomeUsuario", "required": true, "span": 3}
+                    ,{"nome": "aplicacao", "required": true, "span": 3}
+                    ,{"nome": "emailLogin", "required": true, "span": 3}
+                    ,{"nome": "telefoneContato", "required": false, "span": 3}
+                    ,{"nome": "descricao", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [
-                    "empresa", "dataEnvioDocumento", "cnpjFornecedor", 
-                    "numeroDocumentoFiscal", "numeroPedido"
                 ]
             },
             {
                 "codigo": 1.2,
-                "descricao": "Recolocar NF",
+                "descricao": "Reset de senha",
                 "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "nomeFornecedor", "required": true, "span": 6}
-                    ,{"nome": "numeroEflow", "required": true, "span": 3}
-                    ,{"nome": "numeroNf", "required": true, "span": 3}
-                    ,{"nome": "motivo", "required": true, "span": 6}
+                    {"nome": "nomeUsuario", "required": true, "span": 6}
+                    ,{"nome": "emailLogin", "required": true, "span": 3}
+                    ,{"nome": "telefoneContato", "required": true, "span": 3}
+                    ,{"nome": "descricao", "required": true, "span": 6}
                 ],
                 "validaDuplicidade": [
-                    "empresa", "numeroEflow", "numeroNf"
                 ]
             },
             {
                 "codigo": 1.3,
-                "descricao": "Outras solicitações",
+                "descricao": "Alteração e-mail",
                 "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "cnpjFornecedor", "required": true, "span": 2}
-                    ,{"nome": "numeroDocumentoFiscal", "required": true, "span": 2}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}                    
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
+                    {"nome": "nomeUsuario", "required": true, "span": 3}
+                    ,{"nome": "aplicacao", "required": true, "span": 3}
+                    ,{"nome": "novoEmail", "required": true, "span": 3}
+                    ,{"nome": "telefoneContato", "required": true, "span": 3}
+                    ,{"nome": "descricao", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [
-                    "empresa", "cnpjFornecedor", "numeroDocumentoFiscal", "numeroPedido"
-                ]
-            }
-        ]
-    },
-    {
-        "codigo": 2,
-        "descricao": "Escrituração de NFs",
-        "itens": [
-            {
-                "codigo": 2.1,
-                "descricao": "Outras solicitações",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "numeroEflow", "required": true, "span": 1}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "numeroDocumentoFiscal", "required": true, "span": 2}
-                    ,{"nome": "numeroPedido", "required": true, "span": 1}                    
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "codigoFornecedor", "numeroEflow", "numeroPedido", "numeroDocumentoFiscal"
                 ]
             },
             {
-                "codigo": 2.2,
-                "descricao": "Simulação XML",
+                "codigo": 1.4,
+                "descricao": "Inativação de acesso",
                 "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "numeroDocumentoFiscal", "required": true, "span": 2}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}                    
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
+                    {"nome": "emailUsuario", "required": true, "span": 4}
+                    ,{"nome": "telefoneContato", "required": true, "span": 2}
+                    ,{"nome": "descricao", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [
-                    "empresa", "codigoFornecedor", "numeroPedido", "numeroDocumentoFiscal"
-                ]
-            }
-        ]
-    },
-    {
-        "codigo": 3,
-        "descricao": "Pagamento de NFs",
-        "itens": [
-            {
-                "codigo": 3.1,
-                "descricao": "Documento finalizado, vencido e não pago",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "tipoLancamento", "required": true, "span": 2}
-                    ,{"nome": "numeroEflow", "required": true, "span": 2}
-                    ,{"nome": "numeroNf", "required": true, "span": 2}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "codigoFornecedor", "numeroEflow", "numeroPedido", "tipoLancamento"
-                ]
-            },
-            {
-                "codigo": 3.2,
-                "descricao": "Cadastro de dados bancários",
-                "campos": [
-                    {"nome": "empresas", "required": true, "span": 6}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 1}
-                    ,{"nome": "documentoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "agencia", "required": true, "span": 1}
-                    ,{"nome": "contaCorrente", "required": true, "span": 1}
-                    ,{"nome": "digito", "required": true, "span": 1}
-                    ,{"nome": "codigoBanco", "required": true, "span": 2}
-                    ,{"nome": "nomeBanco", "required": true, "span": 4}
-                    ,{"nome": "observacoes", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": true, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "cnpjFornecedor", "agencia", "contaCorrente", "codigoBanco"
-                ]
-            },
-            {
-                "codigo": 3.3,
-                "descricao": "Outras solicitações",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "tipoLancamento", "required": true, "span": 1}
-                    ,{"nome": "numeroNf", "required": true, "span": 1}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "codigoFornecedor", "tipoLancamento", "numeroNf", "numeroPedido"
-                ]
-            },
-            {
-                "codigo": 3.4,
-                "descricao": "Pagamentos judiciais IDs",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 4}
-                    ,{"nome": "vencimento", "required": true, "span": 2}
-                    ,{"nome": "numeroPdps", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": true, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "vencimento", "numeroPdps"
-                ]
-            },
-            {
-                "codigo": 3.5,
-                "descricao": "Pagamentos urgentes",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 2}
-                    ,{"nome": "cnpjFornecedor", "required": true, "span": 2}
-                    ,{"nome": "tipoLancamento", "required": true, "span": 1}
-                    ,{"nome": "numeroLancamentoSap", "required": true, "span": 1}
-                    ,{"nome": "numeroPedido", "required": true, "span": 2}
-                    ,{"nome": "dataPropostaPagamento", "required": true, "span": 1}
-                    ,{"nome": "vencimento", "required": true, "span": 1}
-                    ,{"nome": "oip", "required": true, "span": 2}
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "cnpjFornecedor", "tipoLancamento", "numeroLancamentoSap", "numeroPedido"
-                ]
-            },
-            {
-                "codigo": 3.6,
-                "descricao": "Pagamentos de energia nova",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 4}
-                    ,{"nome": "vencimento", "required": true, "span": 2}
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": true, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "vencimento"
                 ]
             }
 
-        ]
-    },
-    {
-        "codigo": 4,
-        "descricao": "Retenções contratuais",
-        "itens": [
-            {
-                "codigo": 4.1,
-                "descricao": "Outras solicitações",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "numeroCliente", "required": true, "span": 3}
-                    ,{"nome": "numeroOrdemVenda", "required": true, "span": 3}
-                    ,{"nome": "detalhesSolicitacao", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "numeroCliente", "numeroOrdemVenda", "dataRegistro"
-                ]
-            },
-            {
-                "codigo": 4.2,
-                "descricao": "Solicitação de relatórios",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "cnpjFornecedor", "required": true, "span": 3}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 3}
-                    ,{"nome": "numeroContrato", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": false, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "cnpjFornecedor", "numeroContrato", "dataRegistro"
-                ]
-            },
-            {
-                "codigo": 4.3,
-                "descricao": "Devolução retenção contratual",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "cnpjFornecedor", "required": true, "span": 3}
-                    ,{"nome": "codigoFornecedor", "required": true, "span": 3}
-                    ,{"nome": "numeroContrato", "required": true, "span": 6}
-                    ,{"nome": "upload", "required": true, "span": 6}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "cnpjFornecedor", "numeroContrato", "dataRegistro"
-                ]
-            }
-        ]
-    },
-    {
-        "codigo": 5,
-        "descricao": "PDPs",
-        "itens": [
-            {
-                "codigo": 5.1,
-                "descricao": "Solicitação de Criação de Modelo de PDP",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "tipoModeloPdp", "required": true, "span": 3}
-                    ,{"nome": "classeCusto", "required": true, "span": 3}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "tipoModeloPdp", "classeCusto"
-                ]
-            },
-            {
-                "codigo": 5.2,
-                "descricao": "Solicitação para Inclusão de Modelo de PDP em Circuito Especial",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "ano", "required": true, "span": 2}
-                    ,{"nome": "modelo", "required": true, "span": 2}
-                    ,{"nome": "circuito", "required": true, "span": 2}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "ano", "modelo", "cirduito"
-                ]
-            },
-            {
-                "codigo": 5.3,
-                "descricao": "Associação do Modelo de PDP ao Usuário que vai Utilizar",
-                "campos": [
-                    {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "brUsuario", "required": true, "span": 2}
-                    ,{"nome": "modelo", "required": true, "span": 2}
-                    ,{"nome": "ano", "required": true, "span": 2}
-                ],
-                "validaDuplicidade": [
-                    "empresa", "ano", "modelo", "brUsuario"
-                ]
-            }            
         ]
     }
 ]

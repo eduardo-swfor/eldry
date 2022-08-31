@@ -129,7 +129,7 @@ export default function Sidebar({forcarVisivel}) {
           <Heading className='mt-3' title={'Ocorrências'} />
           <Divider className='mb-3'/>
 
-          {tipoOcorrencias.map((item, chave1) =>{
+          {tipoOcorrencias.map((item, chave1) =>{            
             return (
               <ItemCondicional 
                 key={chave1} 

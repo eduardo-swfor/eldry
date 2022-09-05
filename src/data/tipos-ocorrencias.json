@@ -18,7 +18,7 @@
             },
             {
                 "codigo": 1.2,
-                "descricao": "Reset de senha",
+                "descricao": "Suporte",
                 "campos": [
                     {"nome": "nomeUsuario", "required": true, "span": 6}
                     ,{"nome": "emailLogin", "required": true, "span": 3}
@@ -51,6 +51,72 @@
                 ],
                 "validaDuplicidade": [
                 ]
+            }
+        ]
+    },
+    {
+        "codigo": 2,
+        "descricao": "Sistemas",
+        "itens": [
+            {
+                "codigo": 2.1,
+                "descricao": "Pedido de viagem",
+                "campos": [
+                    {"nome": "passageiro", "required": true, "span": 4}
+                    ,{"nome": "dataIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                    ,{"nome": "localidade", "required": true, "span": 2}
+                    ,{"nome": "localidade2", "required": false, "span": 2}
+                    ,{"nome": "localidade3", "required": false, "span": 2}
+                    ,{"nome": "localidade4", "required": false, "span": 2}
+                    ,{"nome": "precisaAdiantamento", "required": true, "span": 2}
+                    ,{"nome": "precisaHospedagem", "required": true, "span": 2}
+                ],
+                "validaDuplicidade": [ "passageiro", "dataIda" ]
+            },
+            {
+                "codigo": 2.2,
+                "descricao": "Pedido de diária",
+                "campos": [
+                    {"nome": "dataIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                    ,{"nome": "localidade", "required": true, "span": 2}
+                    ,{"nome": "localidade2", "required": false, "span": 2}
+                    ,{"nome": "localidade3", "required": false, "span": 2}
+                    ,{"nome": "localidade4", "required": false, "span": 2}
+                    ,{"nome": "precisaAdiantamento", "required": true, "span": 2}
+                    ,{"nome": "precisaHospedagem", "required": true, "span": 2}
+                    ,{"nome": "motivoViagem", "required": true, "span": 6}
+                ],
+                "validaDuplicidade": [ "passageiro", "dataIda" ]
+            },
+            {
+                "codigo": 2.3,
+                "descricao": "Pedido de Adiantamento de viagem",
+                "campos": [
+                    {"nome": "dataIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                    ,{"nome": "localidade", "required": true, "span": 2}
+                    ,{"nome": "localidade2", "required": false, "span": 2}
+                    ,{"nome": "localidade3", "required": false, "span": 2}
+                    ,{"nome": "localidade4", "required": false, "span": 2}
+                    ,{"nome": "motivoViagem", "required": true, "span": 6}
+                ],
+                "validaDuplicidade": [ "passageiro", "dataIda" ]
+            },
+            {
+                "codigo": 2.4,
+                "descricao": "Reembolso de viagem",
+                "campos": [
+                    {"nome": "dataIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                    ,{"nome": "localidade", "required": true, "span": 2}
+                    ,{"nome": "localidade2", "required": false, "span": 2}
+                    ,{"nome": "localidade3", "required": false, "span": 2}
+                    ,{"nome": "localidade4", "required": false, "span": 2}
+                    ,{"nome": "motivoViagem", "required": true, "span": 6}
+                ],
+                "validaDuplicidade": [ "passageiro", "dataIda" ]
             }
         ]
     }

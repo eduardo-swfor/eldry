@@ -41,4 +41,16 @@
     ,"descricao": {"tipo": "textarea", "titulo": "Descrição"}
     ,"novoEmail": {"tipo": "string", "titulo": "Novo e-mail"}
     ,"emailUsuario": {"tipo": "string", "titulo": "E-mail usuário"}
+    ,"passageiro": {"tipo": "string", "titulo": "Passageiro"}
+    ,"dataIda": {"tipo": "date", "titulo": "Data ida"}
+    ,"dataVolta": {"tipo": "date", "titulo": "Data volta"}
+    ,"localidade": {"tipo": "string", "titulo": "Localidade"}
+    ,"localidade2": {"tipo": "string", "titulo": "Localidade 2"}
+    ,"localidade3": {"tipo": "string", "titulo": "Localidade 3"}
+    ,"localidade4": {"tipo": "string", "titulo": "Localidade 4"}
+    ,"precisaAdiantamento": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["SIM", "NÃO"]}
+    ,"precisaHospedagem": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["SIM", "NÃO"]}
+    ,"motivoViagem": {"tipo": "textarea", "titulo": "Motivo da viagem"}
+    ,"numeroRequisicao": {"tipo": "string", "titulo": "Número requisição"}
+    ,"detalhesPedidosPagamentos": {"tipo": "textarea", "titulo": "Detalhes dos pedidos e pagamentos"}
 }

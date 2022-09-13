@@ -56,7 +56,7 @@
     },
     {
         "codigo": 2,
-        "descricao": "Operação",
+        "descricao": "Viagem",
         "itens": [
             {
                 "codigo": 2.1,
@@ -126,7 +126,7 @@
     },
     {
         "codigo": 3,
-        "descricao": "RH",
+        "descricao": "Operação",
         "itens": [
             {
                 "codigo": 3.1,

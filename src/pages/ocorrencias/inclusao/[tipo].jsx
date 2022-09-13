@@ -22,6 +22,7 @@ import CampoEmpresas from '../../../components/telas/ocorrencias/CampoEmpresas'
 import log from '../../../utils/app-log'
 import endpoints from '../../../data/endpoints.json'
 import { useDropzone } from 'react-dropzone'
+import DoubleInput from '../../../components/inputs/DoubleInput'
 
 export default function Ocorrencia() {
     const router = useRouter()
@@ -135,6 +136,21 @@ export default function Ocorrencia() {
             } else if (configTitulo.tipo === 'string') {
                 return (
                     <TextInput
+                        className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
+                        value={estado ? estado[nome] : ''}
+                        required={config.required}
+                        onChange={valor => {
+                            const obj = {}
+                            obj[nome] = valor
+                            dispatch(obj)
+                        }}                    
+                    />
+                )
+            } else if (configTitulo.tipo === 'double') {
+                return (
+                    <DoubleInput
                         className={className}
                         key={indice}
                         label={configTitulo.titulo}

@@ -53,4 +53,16 @@
     ,"motivoViagem": {"tipo": "textarea", "titulo": "Motivo da viagem"}
     ,"numeroRequisicao": {"tipo": "string", "titulo": "Número requisição"}
     ,"detalhesPedidosPagamentos": {"tipo": "textarea", "titulo": "Detalhes dos pedidos e pagamentos"}
+    ,"horaIda": {"tipo": "string", "titulo": "Hora ida"}
+    ,"horaVolta": {"tipo": "string", "titulo": "Hora volta"}
+    ,"valor": {"tipo": "double", "titulo": "Valor"}
+    ,"nomePaciente": {"tipo": "string", "titulo": "Nome paciente"}
+    ,"tipoExame": {"tipo": "string", "titulo": "Tipo de exame"}
+    ,"medicoSolicitante": {"tipo": "string", "titulo": "Médico solicitante"}
+    ,"autorizacao": {"tipo": "string", "titulo": "Autorização"}
+    ,"medicacao": {"tipo": "string", "titulo": "Medicação"}
+    ,"nomeFuncionario": {"tipo": "string", "titulo": "Nome do funcionário"}
+    ,"data": {"tipo": "date", "titulo": "Data"}
+    ,"autorizacaoGestor": {"tipo": "string", "titulo": "Autorização do gestor"}
+    ,"especialidadeMedica": {"tipo": "string", "titulo": "Especialidade médica"}
 }

@@ -56,15 +56,15 @@
     },
     {
         "codigo": 2,
-        "descricao": "Sistemas",
+        "descricao": "Operação",
         "itens": [
             {
                 "codigo": 2.1,
                 "descricao": "Pedido de viagem",
-                "campos": [
-                    {"nome": "passageiro", "required": true, "span": 4}
-                    ,{"nome": "dataIda", "required": true, "span": 1}
-                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                "campos": [                    
+                    {"nome": "passageiro", "required": true, "span": 6}
+                    ,{"nome": "dataIda", "required": true, "span": 2}                    
+                    ,{"nome": "dataVolta", "required": true, "span": 2}
                     ,{"nome": "localidade", "required": true, "span": 2}
                     ,{"nome": "localidade2", "required": false, "span": 2}
                     ,{"nome": "localidade3", "required": false, "span": 2}
@@ -78,31 +78,35 @@
                 "codigo": 2.2,
                 "descricao": "Pedido de diária",
                 "campos": [
-                    {"nome": "dataIda", "required": true, "span": 1}
-                    ,{"nome": "dataVolta", "required": true, "span": 1}
+                    {"nome": "dataIda", "required": true, "span": 2}
+                    ,{"nome": "horaIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 2}
+                    ,{"nome": "horaVolta", "required": true, "span": 1}
                     ,{"nome": "localidade", "required": true, "span": 2}
                     ,{"nome": "localidade2", "required": false, "span": 2}
-                    ,{"nome": "localidade3", "required": false, "span": 2}
+                    ,{"nome": "localidade3", "required": false, "span": 2}                    
                     ,{"nome": "localidade4", "required": false, "span": 2}
                     ,{"nome": "precisaAdiantamento", "required": true, "span": 2}
                     ,{"nome": "precisaHospedagem", "required": true, "span": 2}
                     ,{"nome": "motivoViagem", "required": true, "span": 6}
                 ],
-                "validaDuplicidade": [ "passageiro", "dataIda" ]
+                "validaDuplicidade": [  ]
             },
             {
                 "codigo": 2.3,
                 "descricao": "Pedido de Adiantamento de viagem",
                 "campos": [
-                    {"nome": "dataIda", "required": true, "span": 1}
-                    ,{"nome": "dataVolta", "required": true, "span": 1}
-                    ,{"nome": "localidade", "required": true, "span": 2}
-                    ,{"nome": "localidade2", "required": false, "span": 2}
-                    ,{"nome": "localidade3", "required": false, "span": 2}
-                    ,{"nome": "localidade4", "required": false, "span": 2}
+                    {"nome": "dataIda", "required": true, "span": 2}
+                    ,{"nome": "horaIda", "required": true, "span": 1}
+                    ,{"nome": "dataVolta", "required": true, "span": 2}
+                    ,{"nome": "horaVolta", "required": true, "span": 1}
+                    ,{"nome": "localidade", "required": true, "span": 3}
+                    ,{"nome": "localidade2", "required": false, "span": 3}
+                    ,{"nome": "localidade3", "required": false, "span": 3}
+                    ,{"nome": "localidade4", "required": false, "span": 3}
                     ,{"nome": "motivoViagem", "required": true, "span": 6}
                 ],
-                "validaDuplicidade": [ "passageiro", "dataIda" ]
+                "validaDuplicidade": [  ]
             },
             {
                 "codigo": 2.4,
@@ -110,14 +114,71 @@
                 "campos": [
                     {"nome": "dataIda", "required": true, "span": 1}
                     ,{"nome": "dataVolta", "required": true, "span": 1}
-                    ,{"nome": "localidade", "required": true, "span": 2}
+                    ,{"nome": "localidade", "required": true, "span": 4}
                     ,{"nome": "localidade2", "required": false, "span": 2}
                     ,{"nome": "localidade3", "required": false, "span": 2}
                     ,{"nome": "localidade4", "required": false, "span": 2}
                     ,{"nome": "motivoViagem", "required": true, "span": 6}
                 ],
-                "validaDuplicidade": [ "passageiro", "dataIda" ]
+                "validaDuplicidade": [ ]
             }
+        ]
+    },
+    {
+        "codigo": 3,
+        "descricao": "RH",
+        "itens": [
+            {
+                "codigo": 3.1,
+                "descricao": "Solicitação de autorização de exames no domicilio",
+                "campos": [                    
+                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    ,{"nome": "tipoExame", "required": true, "span": 4}
+                    ,{"nome": "valor", "required": true, "span": 2}
+                    ,{"nome": "medicoSolicitante", "required": true, "span": 3}
+                    ,{"nome": "autorizacao", "required": true, "span": 3}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [  ]
+            },
+            {
+                "codigo": 3.2,
+                "descricao": "Reembolso de medicação para familiar",
+                "campos": [                    
+                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    ,{"nome": "medicoSolicitante", "required": true, "span": 4}
+                    ,{"nome": "valor", "required": true, "span": 2}
+                    ,{"nome": "medicacao", "required": true, "span": 3}
+                    ,{"nome": "autorizacao", "required": true, "span": 3}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [  ]
+            },
+            {
+                "codigo": 3.3,
+                "descricao": "Justificativa de ponto",
+                "campos": [                    
+                    {"nome": "nomeFuncionario", "required": true, "span": 6}
+                    ,{"nome": "data", "required": true, "span": 2}
+                    ,{"nome": "autorizacaoGestor", "required": true, "span": 4}
+                    ,{"nome": "motivo", "required": true, "span": 6}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [  ]
+            },
+            {
+                "codigo": 3.4,
+                "descricao": "Visita de médico especialista",
+                "campos": [                    
+                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    ,{"nome": "especialidadeMedica", "required": true, "span": 4}
+                    ,{"nome": "valor", "required": true, "span": 2}
+                    ,{"nome": "medicoSolicitante", "required": true, "span": 3}
+                    ,{"nome": "autorizacao", "required": true, "span": 3}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [  ]
+            }            
         ]
     }
 ]

@@ -119,6 +119,7 @@
                     ,{"nome": "localidade3", "required": false, "span": 2}
                     ,{"nome": "localidade4", "required": false, "span": 2}
                     ,{"nome": "motivoViagem", "required": true, "span": 6}
+                    ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [ ]
             }

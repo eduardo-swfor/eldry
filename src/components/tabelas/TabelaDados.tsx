@@ -219,9 +219,9 @@ export default function TabelaDados(props: TabelaDadosProps) {
     const formatacao = prop.formatacao ? getFormatacao(valor, prop.formatacao) : ''
 
     if (prop.nome.indexOf('.') >= 0) {
-      valor = prop.nome.split('.').reduce((anterior, novo) => {
+      valor = prop.nome.split('.').reduce((anterior, novo, index) => {
         if (!anterior) {
-          return obj[novo]
+          return index == 0 ? obj[novo] : null
         } else {
           return anterior[novo]
         }

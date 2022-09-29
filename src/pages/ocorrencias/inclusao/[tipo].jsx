@@ -8,6 +8,7 @@ import useAppData from '../../../data/hook/useAppData'
 import TextInput from '../../../components/inputs/TextInput'
 import CnpjInput from '../../../components/inputs/CnpjInput'
 import DateInput from '../../../components/inputs/DateInput'
+import MesAnoInput from '../../../components/inputs/MesAnoInput'
 import TextAreaInput from '../../../components/inputs/TextAreaInput'
 import SelectInput from '../../../components/inputs/SelectInput'
 import tipoOcorrencias from '../../../data/tipos-ocorrencias.json'
@@ -23,6 +24,8 @@ import log from '../../../utils/app-log'
 import endpoints from '../../../data/endpoints.json'
 import { useDropzone } from 'react-dropzone'
 import DoubleInput from '../../../components/inputs/DoubleInput'
+import SelectColecao from '../../../components/inputs/SelectColecao'
+import CheckboxInput from '../../../components/inputs/CheckboxInput'
 
 export default function Ocorrencia() {
     const router = useRouter()
@@ -213,6 +216,36 @@ export default function Ocorrencia() {
                         }}
                     />
                 )
+            } else if (configTitulo.tipo === 'competencia') {
+                return (
+                    <MesAnoInput 
+                        className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
+                        value={estado ? estado[nome] : ''}
+                        required={config.required}
+                        onChange={valor => {
+                            const obj = {}
+                            obj[nome] = valor
+                            dispatch(obj)
+                        }}
+                    />
+                )
+            } else if (configTitulo.tipo === 'checkbox') {
+                return (
+                    <CheckboxInput 
+                        className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
+                        value={estado ? estado[nome] : false}
+                        required={config.required}
+                        onChange={valor => {
+                            const obj = {}
+                            obj[nome] = valor
+                            dispatch(obj)
+                        }}
+                    />
+                )
             } else if (configTitulo.tipo === 'empresas') {
                 return (
                     <CampoEmpresas 
@@ -245,7 +278,24 @@ export default function Ocorrencia() {
                         }}
                     />
                 )
-            }  else if (configTitulo.tipo === 'upload') {                
+            } else if (configTitulo.tipo === 'banco') {
+                return (
+                    <SelectColecao
+                        endpoint={endpoints.BANCO}
+                        camposExibicao={[{"nome": "codigo"}, {"nome": "nome"}]}
+                        className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
+                        required={config.required}
+                        retirarCampos={true}
+                        onChange={valor => {
+                            const obj = {}
+                            obj[nome] = valor
+                            dispatch(obj)
+                        }}
+                    />
+                )
+            } else if (configTitulo.tipo === 'upload') {                
                 return (
                     <div 
                         key={indice}

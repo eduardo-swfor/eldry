@@ -86,8 +86,7 @@ export default function AtribuirSla() {
                                     className='w-full md:w-1/6'
                                     placeholder='Digite o SLA' 
                                     value={item?.sla}
-                                    onChange={valor => {    
-                                        console.log(valor)                                    
+                                    onChange={valor => {                               
                                         item.sla = valor
                                     }}
                                 />

@@ -181,5 +181,54 @@
                 "validaDuplicidade": [  ]
             }            
         ]
+    },
+    {
+        "codigo": 4,
+        "descricao": "Contabilidade",
+        "itens": [
+            {
+                "codigo": 4.1,
+                "descricao": "Apontamento de folha de pagamento",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 4}
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "competencia" ]
+            },
+            {
+                "codigo": 4.2,
+                "descricao": "Aprovação da conferência da folha",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 4}
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "competencia" ]
+            },
+            {
+                "codigo": 4.3,
+                "descricao": "Planilha financeira conciliada",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 4}
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "competencia" ]
+            },
+            {
+                "codigo": 4.4,
+                "descricao": "Valores para efetuar provisões",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 4}                    
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "contigencia", "required": false, "span": 2}
+                    ,{"nome": "receita", "required": false, "span": 2}
+                    ,{"nome": "provisao", "required": false, "span": 2}
+                    ,{"nome": "upload", "required": true, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "competencia" ]
+            }
+        ]
     }
 ]

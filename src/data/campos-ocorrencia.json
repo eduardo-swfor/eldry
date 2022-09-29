@@ -65,4 +65,9 @@
     ,"data": {"tipo": "date", "titulo": "Data"}
     ,"autorizacaoGestor": {"tipo": "string", "titulo": "Autorização do gestor"}
     ,"especialidadeMedica": {"tipo": "string", "titulo": "Especialidade médica"}
+    ,"competencia": {"tipo": "competencia", "titulo": "Competência"}
+    ,"banco": {"tipo": "banco", "titulo": "Banco"}
+    ,"contigencia": {"tipo": "checkbox", "titulo": "Contingência"}
+    ,"receita": {"tipo": "checkbox", "titulo": "Receita"}
+    ,"provisao": {"tipo": "checkbox", "titulo": "Provisão"}
 }

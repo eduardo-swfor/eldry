@@ -121,3 +121,20 @@ export function trocaDateParaStringDoObjeto(obj, ...camposAdicionais) {
 
     return novoObj
 }
+
+export function parseMesAno(data: string, formato = '') {
+    if (data) {
+        const valor = moment(data, !formato ? 'MM/YYYY' : formato)
+        return valor.isValid() ? valor.toDate() : null
+    } else {
+        return null
+    }    
+}
+
+export function formataMesAno(data: Date) {
+    if (data && moment(data).isValid()) {
+        return moment(data).format('MM/YYYY')
+    } 
+
+    return ''
+}

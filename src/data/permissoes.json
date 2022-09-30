@@ -51,6 +51,7 @@
         ,"/ocorrencias/inclusao/4.2"
         ,"/ocorrencias/inclusao/4.3"
         ,"/ocorrencias/inclusao/4.4"
+        ,"/ocorrencias/inclusao/4.5"
     ],
     "endpoints": [
         "/api/perfil"

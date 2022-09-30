@@ -208,6 +208,17 @@
             },
             {
                 "codigo": 4.3,
+                "descricao": "Envio dos extratos",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 6}
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "banco", "required": true, "span": 4}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": []
+            },
+            {
+                "codigo": 4.4,
                 "descricao": "Planilha financeira conciliada",
                 "campos": [                    
                     {"nome": "empresa", "required": true, "span": 4}
@@ -217,7 +228,7 @@
                 "validaDuplicidade": [ "empresa", "competencia" ]
             },
             {
-                "codigo": 4.4,
+                "codigo": 4.5,
                 "descricao": "Valores para efetuar provisões",
                 "campos": [                    
                     {"nome": "empresa", "required": true, "span": 4}                    

@@ -26,6 +26,8 @@ import { useDropzone } from 'react-dropzone'
 import DoubleInput from '../../../components/inputs/DoubleInput'
 import SelectColecao from '../../../components/inputs/SelectColecao'
 import CheckboxInput from '../../../components/inputs/CheckboxInput'
+import IntegerInput from '../../../components/inputs/IntegerInput'
+import Subtitulo from '../../../components/labels/Subtitulo'
 
 export default function Ocorrencia() {
     const router = useRouter()
@@ -115,13 +117,22 @@ export default function Ocorrencia() {
         const config = tipoOcorrencia.campos.filter(valor => valor.nome === nome).pop()        
         const className = config.span ?  `col-span-6 md:col-span-${config.span}` : ''
         
-        if (!configTitulo || !config) {
+        if (/*!configTitulo || */!config) {
             log('desenv', `Não foi possível encontrar configurações para o campo ${nome}`)
             log('desenv', `config = ${JSON.stringify(config)}`)
             log('desenv', `configTitulo = ${JSON.stringify(configTitulo)}`)
             return null
         } else {
-            if (configTitulo.tipo === 'cnpj') {
+            if (!configTitulo) {
+                return (
+                    <Subtitulo
+                        className={`${className} bg-gray-100 text-center py-2 rounded-md`}
+                        key={indice}
+                    >
+                        {`${config.titulo}`}
+                    </Subtitulo>
+                )
+            } else if (configTitulo.tipo === 'cnpj') {
                 return (
                     <CnpjInput
                         className={className}
@@ -154,6 +165,21 @@ export default function Ocorrencia() {
             } else if (configTitulo.tipo === 'double') {
                 return (
                     <DoubleInput
+                        className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
+                        value={estado ? estado[nome] : ''}
+                        required={config.required}
+                        onChange={valor => {
+                            const obj = {}
+                            obj[nome] = valor
+                            dispatch(obj)
+                        }}                    
+                    />
+                )
+            } else if (configTitulo.tipo === 'integer') {
+                return (
+                    <IntegerInput
                         className={className}
                         key={indice}
                         label={configTitulo.titulo}
@@ -234,7 +260,7 @@ export default function Ocorrencia() {
             } else if (configTitulo.tipo === 'checkbox') {
                 return (
                     <CheckboxInput 
-                        className={className}
+                        className={`${className} md:mt-4`}
                         key={indice}
                         label={configTitulo.titulo}
                         value={estado ? estado[nome] : false}

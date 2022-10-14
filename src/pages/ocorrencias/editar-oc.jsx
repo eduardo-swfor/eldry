@@ -23,6 +23,9 @@ import useAuth from '../../data/hook/useAuth'
 import endpoints from '../../data/endpoints.json'
 import MesAnoInput from '../../components/inputs/MesAnoInput'
 import CheckboxInput from '../../components/inputs/CheckboxInput'
+import IntegerInput from '../../components/inputs/IntegerInput'
+import DoubleInput from '../../components/inputs/DoubleInput'
+import Subtitulo from '../../components/labels/Subtitulo'
 
 export default function EditarOc({ ocorrenciaInformada = null }) {
   const router = useRouter()
@@ -96,15 +99,44 @@ export default function EditarOc({ ocorrenciaInformada = null }) {
     const config = tipoOcorrencia.campos.filter(valor => valor.nome === nome).pop()
     const className = config.span ? `col-span-6 md:col-span-${config.span}` : ''
 
-    if (!configTitulo || !config) {
+    if (/*!configTitulo || */!config) {
       log('desenv', `Não foi possível encontrarconfigurações para o campo ${nome}`)
       log('desenv', `config = ${JSON.stringify(config)}`)
       log('desenv', `configTitulo = ${JSON.stringify(configTitulo)}`)
       return null
     } else {
-      if (['string', 'combo', 'cnpj'].indexOf(configTitulo.tipo) >= 0) {
+      if (!configTitulo) {
+        return (
+            <Subtitulo
+                className={`${className} bg-gray-100 text-center py-2 rounded-md`}
+                key={indice}
+            >
+                {`${config.titulo}`}
+            </Subtitulo>
+        )
+      } else if (['string', 'combo', 'cnpj', 'integer'].indexOf(configTitulo.tipo) >= 0) {
         return (
           <TextInput
+            readOnly
+            className={className}
+            key={indice}
+            label={configTitulo.titulo}
+            value={ocorrencia ? ocorrencia[nome] : ''}
+          />
+        )
+      } else if (configTitulo.tipo === 'double') {
+        return (
+          <DoubleInput
+            readOnly
+            className={className}
+            key={indice}
+            label={configTitulo.titulo}
+            value={ocorrencia ? ocorrencia[nome] : ''}
+          />
+        )
+      } else if (configTitulo.tipo === 'integer') {
+        return (
+          <IntegerInput
             readOnly
             className={className}
             key={indice}
@@ -165,7 +197,7 @@ export default function EditarOc({ ocorrenciaInformada = null }) {
       } else if (configTitulo.tipo === 'checkbox') {
         return (
             <CheckboxInput 
-                className={className}
+                className={`${className} md:mt-4`}
                 key={indice}
                 label={configTitulo.titulo}
                 value={ocorrencia ? ocorrencia[nome] : false}

@@ -48,8 +48,8 @@
     ,"localidade2": {"tipo": "string", "titulo": "Localidade 2"}
     ,"localidade3": {"tipo": "string", "titulo": "Localidade 3"}
     ,"localidade4": {"tipo": "string", "titulo": "Localidade 4"}
-    ,"precisaAdiantamento": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["SIM", "NÃO"]}
-    ,"precisaHospedagem": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["SIM", "NÃO"]}
+    ,"precisaAdiantamento": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["Sim", "Não"]}
+    ,"precisaHospedagem": {"tipo": "combo", "titulo": "Precisa adiantamento?", "itens": ["Sim", "Não"]}
     ,"motivoViagem": {"tipo": "textarea", "titulo": "Motivo da viagem"}
     ,"numeroRequisicao": {"tipo": "string", "titulo": "Número requisição"}
     ,"detalhesPedidosPagamentos": {"tipo": "textarea", "titulo": "Detalhes dos pedidos e pagamentos"}
@@ -70,4 +70,28 @@
     ,"contigencia": {"tipo": "checkbox", "titulo": "Contingência"}
     ,"receita": {"tipo": "checkbox", "titulo": "Receita"}
     ,"provisao": {"tipo": "checkbox", "titulo": "Provisão"}
+    ,"cargo": {"tipo": "string", "titulo": "Cargo"}
+    ,"motivoDesligamento": {"tipo": "string", "titulo": "Motivo desligamento"}
+    ,"iniciativaDesligamento": {"tipo": "combo", "titulo": "Iniciativa", "itens": ["Empresa", "Empregado"]}
+    ,"justoMotivo": {"tipo": "checkbox", "titulo": "Justo motivo?"}
+    ,"motivoVaga": {"tipo": "combo", "titulo": "Motivo vaga", "itens": ["Aumento quadro", "Substituição", "Promoção/Transferência"]}
+    ,"caraterVaga": {"tipo": "combo", "titulo": "Caráter da Vaga", "itens": ["CLT", "Estagiário", "Temporário"]}
+    ,"mesesTemporario": {"tipo": "integer", "titulo": "Meses temp."}
+    ,"experienciaAnterior": {"tipo": "combo", "titulo": "Experiência anterior", "itens": ["Sim", "Não"]}
+    ,"jornadaTrabalho": {"tipo": "integer", "titulo": "Jornada (horas)"}
+    ,"plantao": {"tipo": "combo", "titulo": "Plantão", "itens": ["Sim", "Não"]}
+    ,"segundoGrau": {"tipo": "combo", "titulo": "Segundo grau", "itens": ["Completo", "Incompleto", "Indiferente"]}
+    ,"formacaoTecnica": {"tipo": "string", "titulo": "Formação técnica"}
+    ,"ensinoSuperior": {"tipo": "string", "titulo": "Ensino superior"}
+    ,"mba": {"tipo": "combo", "titulo": "MBA", "itens": ["Sim", "Não", "Indiferente"]}
+    ,"sexo": {"tipo": "combo", "titulo": "Sexo", "itens": ["Homens", "Mulheres", "Indiferente"]}
+    ,"usoUniforme": {"tipo": "combo", "titulo": "Uso uniforme", "itens": ["Sim", "Não", "Opcional"]}
+    ,"usoEpi": {"tipo": "combo", "titulo": "Uso EPI", "itens": ["Sim", "Não"]}
+    ,"epis": {"tipo": "string", "titulo": "EPIs"}
+    ,"cargoAtual": {"tipo": "string", "titulo": "Cargo atual"}
+    ,"novoCargo": {"tipo": "string", "titulo": "Novo cargo"}
+    ,"vigencia": {"tipo": "date", "titulo": "Vigência"}
+    ,"inicioFerias": {"tipo": "date", "titulo": "Início férias"}
+    ,"fimFerias": {"tipo": "date", "titulo": "Fim férias"}
+    ,"contratacaoTemporaria": {"tipo": "combo", "titulo": "Contratação temporária", "itens": ["Sim", "Não"]}
 }

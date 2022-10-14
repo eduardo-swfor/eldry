@@ -25,7 +25,6 @@ import MesAnoInput from '../../components/inputs/MesAnoInput'
 import CheckboxInput from '../../components/inputs/CheckboxInput'
 import IntegerInput from '../../components/inputs/IntegerInput'
 import DoubleInput from '../../components/inputs/DoubleInput'
-import Subtitulo from '../../components/labels/Subtitulo'
 
 export default function EditarOc({ ocorrenciaInformada = null }) {
   const router = useRouter()

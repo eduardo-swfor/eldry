@@ -94,4 +94,5 @@
     ,"inicioFerias": {"tipo": "date", "titulo": "Início férias"}
     ,"fimFerias": {"tipo": "date", "titulo": "Fim férias"}
     ,"contratacaoTemporaria": {"tipo": "combo", "titulo": "Contratação temporária", "itens": ["Sim", "Não"]}
+    ,"nomeSolicitante": {"tipo": "string", "titulo": "Nome solicitante"}
 }

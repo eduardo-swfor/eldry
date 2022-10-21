@@ -209,20 +209,17 @@ export default function Ocorrencia() {
                 )
             } else if (configTitulo.tipo === 'empresa') {
                 return (
-                    <CampoPesquisaEmpresa 
-                        key={indice}
+                    <SelectColecao
+                        endpoint={endpoints.EMPRESA}
+                        camposExibicao={[{nome: 'nome'}]}
                         className={className}
+                        key={indice}
+                        label={configTitulo.titulo}
                         required={config.required}
-                        value={estado ? estado[nome] : ''}
+                        retirarCampos={true}
                         onChange={valor => {
                             const obj = {}
-
-                            if (valor) {
-                                obj[nome] = valor
-                            } else {
-                                obj[nome] = ''
-                            }
-
+                            obj[nome] = valor.nome
                             dispatch(obj)
                         }}
                     />

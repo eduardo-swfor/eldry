@@ -160,7 +160,7 @@ export default function EditarOc({ ocorrenciaInformada = null }) {
             className={className}
             key={indice}
             label={configTitulo.titulo}
-            value={ocorrencia ? `${ocorrencia[nome].codigo} - ${ocorrencia[nome].nome}` : ''}
+            value={ocorrencia ? ocorrencia[nome] : ''}
           />
         )
       } else if (configTitulo.tipo === 'banco') {

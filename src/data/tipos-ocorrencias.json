@@ -241,5 +241,82 @@
                 "validaDuplicidade": [ "empresa", "competencia" ]
             }
         ]
+    },
+    {
+        "codigo": 5,
+        "descricao": "RH",
+        "itens": [
+            {
+                "codigo": 5.1,
+                "descricao": "Solicitação de desligamento",
+                "campos": [                    
+                    {"nome": "nomeFuncionario", "required": true, "span": 4}
+                    ,{"nome": "cargo", "required": true, "span": 2}
+                    ,{"nome": "empresa", "required": true, "span": 4}
+                    ,{"nome": "data", "required": true, "span": 2}
+                    ,{"nome": "motivoDesligamento", "required": true, "span": 3}
+                    ,{"nome": "iniciativaDesligamento", "required": true, "span": 2}
+                    ,{"nome": "justoMotivo", "required": false, "span": 1}
+                    ,{"nome": "observacoes", "required": false, "span": 6}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "nomeFuncionario", "data" ]
+            },
+            {
+                "codigo": 5.2,
+                "descricao": "Oferta de vaga",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 3}
+                    ,{"nome": "nomeSolicitante", "required": true, "span": 3}
+                    ,{"nome": "motivoVaga", "required": true, "span": 2}
+                    ,{"nome": "caraterVaga", "required": true, "span": 2}
+                    ,{"nome": "mesesTemporario", "required": false, "span": 2}
+                    ,{"nome": "cargo", "required": true, "span": 2}
+                    ,{"nome": "experienciaAnterior", "required": true, "span": 2}
+                    ,{"nome": "jornadaTrabalho", "required": true, "span": 1}
+                    ,{"nome": "plantao", "required": true, "span": 1}       
+                    ,{"nome": "subtitulo", "required": true, "span": 6, "titulo": "Formação acadêmica"} 
+                    ,{"nome": "segundoGrau", "required": true, "span": 2}                    
+                    ,{"nome": "formacaoTecnica", "required": true, "span": 2}                    
+                    ,{"nome": "ensinoSuperior", "required": true, "span": 1}        
+                    ,{"nome": "mba", "required": true, "span": 1}
+                    ,{"nome": "subtitulo2", "required": true, "span": 6, "titulo": "Responsabilidades do cargo"} 
+                    ,{"nome": "sexo", "required": true, "span": 1}
+                    ,{"nome": "usoUniforme", "required": true, "span": 1}
+                    ,{"nome": "usoEpi", "required": true, "span": 1}                    
+                    ,{"nome": "epis", "required": false, "span": 3}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                    
+
+                ],
+                "validaDuplicidade": []
+            },
+            {
+                "codigo": 5.3,
+                "descricao": "Solicitação de promoção",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 6}
+                    ,{"nome": "nomeFuncionario", "required": true, "span": 6}
+                    ,{"nome": "cargoAtual", "required": true, "span": 2}
+                    ,{"nome": "novoCargo", "required": true, "span": 2}
+                    ,{"nome": "vigencia", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "nomeFuncionario", "cargoAtual" ]
+            },
+            {
+                "codigo": 5.4,
+                "descricao": "Pedido de férias",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 6}
+                    ,{"nome": "nomeFuncionario", "required": true, "span": 6}
+                    ,{"nome": "cargo", "required": true, "span": 2}
+                    ,{"nome": "inicioFerias", "required": true, "span": 2}
+                    ,{"nome": "fimFerias", "required": true, "span": 2}
+                    ,{"nome": "contratacaoTemporaria", "required": true, "span": 3}                    
+                ],
+                "validaDuplicidade": [ "empresa", "nomeFuncionario", "inicioFerias" ]
+            }
+        ]
     }
 ]

@@ -19,6 +19,7 @@ aws.config.update({
 
 const apiRoute = nextConnect({
     onError(error, req, res) {
+        console.log(error)
         return res.status(201).json('$'+JSON.stringify(error))
     },
     onNoMatch(req, res) {

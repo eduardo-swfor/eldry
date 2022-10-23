@@ -15,7 +15,6 @@ import tipoOcorrencias from '../../../data/tipos-ocorrencias.json'
 import camposOcorrencias from '../../../data/campos-ocorrencia.json'
 import { formataTituloOcorrencia } from '../../../components/telas/ocorrencias/TituloOcorrencia'
 import { validaCamposOcorrencia } from '../../../utils/funcoes-ocorrencias'
-import CampoPesquisaEmpresa from "../../../components/telas/empresa/CampoPesquisaEmpresa"
 import PainelMensagemOcorrencia from '../../../components/telas/ocorrencias/PainelMensagemOcorrencia'
 import { useRouter } from 'next/router'
 import If from "../../../components/utils/If"
@@ -216,10 +215,9 @@ export default function Ocorrencia() {
                         key={indice}
                         label={configTitulo.titulo}
                         required={config.required}
-                        retirarCampos={true}
                         onChange={valor => {
                             const obj = {}
-                            obj[nome] = valor.nome
+                            obj[nome] = valor
                             dispatch(obj)
                         }}
                     />

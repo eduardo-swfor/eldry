@@ -381,8 +381,7 @@ export async function validaOcorrencia(ocorrencia, email) {
 
 export async function incluiOcorrencia(ocorrencia, email) {
     await validaOcorrencia(ocorrencia, email)
-
-    const grupoEmpresa = ocorrencia.empresa ? ocorrencia.empresa.grupoEmpresa : ocorrencia.empresas[0].grupoEmpresa
+    const grupoEmpresa = ocorrencia?.empresa ? ocorrencia.empresa?.grupoEmpresa : ''
 
     const sla = await pesquisaSlaOcorrencia(ocorrencia.tipoOcorrencia)
     ocorrencia.sequencia = await sequencialOcorrencia()
@@ -390,7 +389,7 @@ export async function incluiOcorrencia(ocorrencia, email) {
     ocorrencia.dataPrevisaoEncerramento = null
     ocorrencia.dataHoraRegistro = new Date()
     ocorrencia.criadoPor = email
-    ocorrencia.responsavelAtual = await gravaUltimoResponsavel(grupoEmpresa.nome, ocorrencia.tipoOcorrencia, email)
+    ocorrencia.responsavelAtual = await gravaUltimoResponsavel(grupoEmpresa?.nome, ocorrencia.tipoOcorrencia, email)
     ocorrencia.responsavelAfc = ocorrencia.responsavelAtual
     ocorrencia.dataEncerramento = null
     ocorrencia.dataHoraEncerramento = null

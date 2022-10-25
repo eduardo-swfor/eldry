@@ -7,7 +7,8 @@
                 "codigo": 1.1,
                 "descricao": "Reset de senha",
                 "campos": [
-                    {"nome": "nomeUsuario", "required": true, "span": 3}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "nomeUsuario", "required": true, "span": 3}
                     ,{"nome": "aplicacao", "required": true, "span": 3}
                     ,{"nome": "emailLogin", "required": true, "span": 3}
                     ,{"nome": "telefoneContato", "required": false, "span": 3}
@@ -20,7 +21,8 @@
                 "codigo": 1.2,
                 "descricao": "Suporte",
                 "campos": [
-                    {"nome": "nomeUsuario", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "nomeUsuario", "required": true, "span": 6}
                     ,{"nome": "emailLogin", "required": true, "span": 3}
                     ,{"nome": "telefoneContato", "required": true, "span": 3}
                     ,{"nome": "descricao", "required": true, "span": 6}
@@ -32,7 +34,8 @@
                 "codigo": 1.3,
                 "descricao": "Alteração e-mail",
                 "campos": [
-                    {"nome": "nomeUsuario", "required": true, "span": 3}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "nomeUsuario", "required": true, "span": 3}
                     ,{"nome": "aplicacao", "required": true, "span": 3}
                     ,{"nome": "novoEmail", "required": true, "span": 3}
                     ,{"nome": "telefoneContato", "required": true, "span": 3}
@@ -45,7 +48,8 @@
                 "codigo": 1.4,
                 "descricao": "Inativação de acesso",
                 "campos": [
-                    {"nome": "emailUsuario", "required": true, "span": 4}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "emailUsuario", "required": true, "span": 4}
                     ,{"nome": "telefoneContato", "required": true, "span": 2}
                     ,{"nome": "descricao", "required": false, "span": 6}
                 ],
@@ -62,7 +66,8 @@
                 "codigo": 2.1,
                 "descricao": "Pedido de viagem",
                 "campos": [                    
-                    {"nome": "passageiro", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "passageiro", "required": true, "span": 6}
                     ,{"nome": "dataIda", "required": true, "span": 2}                    
                     ,{"nome": "dataVolta", "required": true, "span": 2}
                     ,{"nome": "localidade", "required": true, "span": 2}
@@ -78,7 +83,8 @@
                 "codigo": 2.2,
                 "descricao": "Pedido de diária",
                 "campos": [
-                    {"nome": "dataIda", "required": true, "span": 2}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "dataIda", "required": true, "span": 2}
                     ,{"nome": "horaIda", "required": true, "span": 1}
                     ,{"nome": "dataVolta", "required": true, "span": 2}
                     ,{"nome": "horaVolta", "required": true, "span": 1}
@@ -96,7 +102,8 @@
                 "codigo": 2.3,
                 "descricao": "Pedido de Adiantamento de viagem",
                 "campos": [
-                    {"nome": "dataIda", "required": true, "span": 2}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "dataIda", "required": true, "span": 2}
                     ,{"nome": "horaIda", "required": true, "span": 1}
                     ,{"nome": "dataVolta", "required": true, "span": 2}
                     ,{"nome": "horaVolta", "required": true, "span": 1}
@@ -112,7 +119,8 @@
                 "codigo": 2.4,
                 "descricao": "Reembolso de viagem",
                 "campos": [
-                    {"nome": "dataIda", "required": true, "span": 1}
+                    {"nome": "empresa", "required": true, "span": 6}     
+                    ,{"nome": "dataIda", "required": true, "span": 1}
                     ,{"nome": "dataVolta", "required": true, "span": 1}
                     ,{"nome": "localidade", "required": true, "span": 4}
                     ,{"nome": "localidade2", "required": false, "span": 2}
@@ -133,7 +141,8 @@
                 "codigo": 3.1,
                 "descricao": "Solicitação de autorização de exames no domicilio",
                 "campos": [                    
-                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 2}     
+                    ,{"nome": "nomePaciente", "required": true, "span": 4}
                     ,{"nome": "tipoExame", "required": true, "span": 4}
                     ,{"nome": "valor", "required": true, "span": 2}
                     ,{"nome": "medicoSolicitante", "required": true, "span": 3}
@@ -146,7 +155,8 @@
                 "codigo": 3.2,
                 "descricao": "Reembolso de medicação para familiar",
                 "campos": [                    
-                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 2}     
+                    ,{"nome": "nomePaciente", "required": true, "span": 4}
                     ,{"nome": "medicoSolicitante", "required": true, "span": 4}
                     ,{"nome": "valor", "required": true, "span": 2}
                     ,{"nome": "medicacao", "required": true, "span": 3}
@@ -158,8 +168,9 @@
             {
                 "codigo": 3.3,
                 "descricao": "Justificativa de ponto",
-                "campos": [                    
-                    {"nome": "nomeFuncionario", "required": true, "span": 6}
+                "campos": [               
+                    {"nome": "empresa", "required": true, "span": 2}     
+                    ,{"nome": "nomeFuncionario", "required": true, "span": 4}
                     ,{"nome": "data", "required": true, "span": 2}
                     ,{"nome": "autorizacaoGestor", "required": true, "span": 4}
                     ,{"nome": "motivo", "required": true, "span": 6}
@@ -171,7 +182,8 @@
                 "codigo": 3.4,
                 "descricao": "Visita de médico especialista",
                 "campos": [                    
-                    {"nome": "nomePaciente", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 2}
+                    ,{"nome": "nomePaciente", "required": true, "span": 4}
                     ,{"nome": "especialidadeMedica", "required": true, "span": 4}
                     ,{"nome": "valor", "required": true, "span": 2}
                     ,{"nome": "medicoSolicitante", "required": true, "span": 3}

@@ -100,4 +100,10 @@
     ,"nomeReclamante": {"tipo": "string", "titulo": "Nome reclamante"}
     ,"matricula": {"tipo": "string", "titulo": "Matrícula"}
     ,"cnpj": {"tipo": "cnpj", "titulo": "CNPJ"}
+    ,"vendaDias": {"tipo": "combo", "titulo": "Venda dias", "itens": ["Sim", "Não"]}
+    ,"quantidadeDias": {"tipo": "integer", "titulo": "Qtd dias"}
+    ,"antecipacaoDecimoTerceiro": {"tipo": "combo", "titulo": "Antecipação 13º salário", "itens": ["Sim", "Não"]}
+    ,"dividirFerias": {"tipo": "combo", "titulo": "Dividir férias", "itens": ["3", "2"]}
+    ,"assuntoMonitoramento": {"tipo": "combo", "titulo": "Assunto", "itens": ["Visita", "Médico", "Vacina", "Intercorrência", "Terapias"]}
+    ,"tipoTerapia": {"tipo": "combo", "titulo": "Tipo terapia", "itens": ["Fisioterapia", "Fonoaudiologia", "Psicologia", "Nutrição"]}
 }

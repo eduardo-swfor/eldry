@@ -321,11 +321,15 @@
                 "descricao": "Pedido de férias",
                 "campos": [                    
                     {"nome": "empresa", "required": true, "span": 6}
-                    ,{"nome": "nomeFuncionario", "required": true, "span": 6}
+                    ,{"nome": "nomeFuncionario", "required": true, "span": 4}
                     ,{"nome": "cargo", "required": true, "span": 2}
                     ,{"nome": "inicioFerias", "required": true, "span": 2}
                     ,{"nome": "fimFerias", "required": true, "span": 2}
-                    ,{"nome": "contratacaoTemporaria", "required": true, "span": 3}                    
+                    ,{"nome": "contratacaoTemporaria", "required": true, "span": 2}
+                    ,{"nome": "vendaDias", "required": false, "span": 2}
+                    ,{"nome": "quantidadeDias", "required": false, "span": 2}
+                    ,{"nome": "antecipacaoDecimoTerceiro", "required": false, "span": 2}
+                    ,{"nome": "dividirFerias", "required": false, "span": 2}
                 ],
                 "validaDuplicidade": [ "empresa", "nomeFuncionario", "inicioFerias" ]
             }
@@ -388,7 +392,9 @@
                 "campos": [                    
                     {"nome": "empresa", "required": true, "span": 3}
                     ,{"nome": "nomeReclamante", "required": true, "span": 3}
-                    ,{"nome": "matricula", "required": true, "span": 3}
+                    ,{"nome": "matricula", "required": true, "span": 2}
+                    ,{"nome": "assuntoMonitoramento", "required": true, "span": 2}
+                    ,{"nome": "tipoTerapia", "required": true, "span": 2}
                     ,{"nome": "observacoes", "required": true, "span": 6}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],

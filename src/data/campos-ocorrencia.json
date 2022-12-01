@@ -97,4 +97,6 @@
     ,"nomeSolicitante": {"tipo": "string", "titulo": "Nome solicitante"}
     ,"servicoContratado": {"tipo": "string", "titulo": "Serviço contratado"}
     ,"razaoSocial": {"tipo": "string", "titulo": "Razão social"}
+    ,"nomeReclamante": {"tipo": "string", "titulo": "Nome reclamante"}
+    ,"matricula": {"tipo": "string", "titulo": "Matrícula"}
 }

@@ -63,6 +63,10 @@
         ,"/ocorrencias/inclusao/6.1"
         ,"/ocorrencias/inclusao/6.2"
         ,"/ocorrencias/inclusao/6.3"
+        ,"/ocorrencias/7"
+        ,"/ocorrencias/inclusao/7.1"
+        ,"/ocorrencias/inclusao/7.2"
+        ,"/ocorrencias/inclusao/7.3"
     ],
     "endpoints": [
         "/api/perfil"

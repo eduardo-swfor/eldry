@@ -330,5 +330,52 @@
                 "validaDuplicidade": [ "empresa", "nomeFuncionario", "inicioFerias" ]
             }
         ]
+    },
+    {
+        "codigo": 6,
+        "descricao": "Contratos",
+        "itens": [
+            {
+                "codigo": 6.1,
+                "descricao": "Pedido de Contrato de Serviços",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 3}
+                    ,{"nome": "servicoContratado", "required": true, "span": 3}
+                    ,{"nome": "razaoSocial", "required": true, "span": 4}
+                    ,{"nome": "cnpj", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "servicoContratado", "cnpj" ]
+            },
+            {
+                "codigo": 6.2,
+                "descricao": "Pedido de Contrato de Locação",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 3}
+                    ,{"nome": "servicoContratado", "required": true, "span": 3}
+                    ,{"nome": "razaoSocial", "required": true, "span": 4}
+                    ,{"nome": "cnpj", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "servicoContratado", "cnpj" ]
+            },
+            {
+                "codigo": 6.3,
+                "descricao": "Pedido de Contrato PJ",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 3}
+                    ,{"nome": "nomeSolicitante", "required": true, "span": 3}
+                    ,{"nome": "motivoVaga", "required": true, "span": 2}
+                    ,{"nome": "caraterVaga", "required": true, "span": 2}
+                    ,{"nome": "mesesTemporario", "required": false, "span": 2}
+                    ,{"nome": "cargo", "required": true, "span": 2}
+                    ,{"nome": "experienciaAnterior", "required": true, "span": 2}
+                    ,{"nome": "jornadaTrabalho", "required": true, "span": 1}
+                    ,{"nome": "plantao", "required": true, "span": 1}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": [ "empresa", "servicoContratado", "cnpj" ]
+            }
+        ]
     }
 ]

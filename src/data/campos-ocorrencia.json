@@ -95,4 +95,6 @@
     ,"fimFerias": {"tipo": "date", "titulo": "Fim férias"}
     ,"contratacaoTemporaria": {"tipo": "combo", "titulo": "Contratação temporária", "itens": ["Sim", "Não"]}
     ,"nomeSolicitante": {"tipo": "string", "titulo": "Nome solicitante"}
+    ,"servicoContratado": {"tipo": "string", "titulo": "Serviço contratado"}
+    ,"razaoSocial": {"tipo": "string", "titulo": "Razão social"}
 }

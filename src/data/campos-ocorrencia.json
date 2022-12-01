@@ -99,4 +99,5 @@
     ,"razaoSocial": {"tipo": "string", "titulo": "Razão social"}
     ,"nomeReclamante": {"tipo": "string", "titulo": "Nome reclamante"}
     ,"matricula": {"tipo": "string", "titulo": "Matrícula"}
+    ,"cnpj": {"tipo": "cnpj", "titulo": "CNPJ"}
 }

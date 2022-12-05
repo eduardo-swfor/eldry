@@ -106,4 +106,5 @@
     ,"dividirFerias": {"tipo": "combo", "titulo": "Dividir férias", "itens": ["3", "2"]}
     ,"assuntoMonitoramento": {"tipo": "combo", "titulo": "Assunto", "itens": ["Visita", "Médico", "Vacina", "Intercorrência", "Terapias"]}
     ,"tipoTerapia": {"tipo": "combo", "titulo": "Tipo terapia", "itens": ["Fisioterapia", "Fonoaudiologia", "Psicologia", "Nutrição"]}
+    ,"objetoContrato": {"tipo": "string", "titulo": "Objeto do contrato"}
 }

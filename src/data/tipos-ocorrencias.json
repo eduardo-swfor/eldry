@@ -370,9 +370,8 @@
                     {"nome": "empresa", "required": true, "span": 3}
                     ,{"nome": "nomeSolicitante", "required": true, "span": 3}
                     ,{"nome": "motivoVaga", "required": true, "span": 2}
-                    ,{"nome": "caraterVaga", "required": true, "span": 2}
                     ,{"nome": "mesesTemporario", "required": false, "span": 2}
-                    ,{"nome": "cargo", "required": true, "span": 2}
+                    ,{"nome": "objetoContrato", "required": true, "span": 2}
                     ,{"nome": "experienciaAnterior", "required": true, "span": 2}
                     ,{"nome": "jornadaTrabalho", "required": true, "span": 1}
                     ,{"nome": "plantao", "required": true, "span": 1}

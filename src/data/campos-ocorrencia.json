@@ -107,4 +107,5 @@
     ,"assuntoMonitoramento": {"tipo": "combo", "titulo": "Assunto", "itens": ["Visita", "Médico", "Vacina", "Intercorrência", "Terapias"]}
     ,"tipoTerapia": {"tipo": "combo", "titulo": "Tipo terapia", "itens": ["Fisioterapia", "Fonoaudiologia", "Psicologia", "Nutrição"]}
     ,"objetoContrato": {"tipo": "string", "titulo": "Objeto do contrato"}
+    ,"nomeClassificacao": {"tipo": "combo", "titulo": "Nome clasificação", "itens": ["CIRCUNSTÂNCIA DE RISCO", "QUASE – ERRO", "INCIDENTE SEM DANOS", "INCIDENTE COM DANO/ EVENTO ADVERSO", "NEVER EVENTS"]}    
 }

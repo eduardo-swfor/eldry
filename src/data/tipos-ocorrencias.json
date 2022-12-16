@@ -394,6 +394,7 @@
                     ,{"nome": "matricula", "required": true, "span": 2}
                     ,{"nome": "assuntoMonitoramento", "required": true, "span": 2}
                     ,{"nome": "tipoTerapia", "required": true, "span": 2}
+                    ,{"nome": "nomeClassificacao", "required": true, "span": 3}
                     ,{"nome": "observacoes", "required": true, "span": 6}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],

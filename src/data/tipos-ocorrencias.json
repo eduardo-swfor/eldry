@@ -391,10 +391,14 @@
                 "campos": [                    
                     {"nome": "empresa", "required": true, "span": 3}
                     ,{"nome": "nomeReclamante", "required": true, "span": 3}
-                    ,{"nome": "matricula", "required": true, "span": 2}
+
+                    ,{"nome": "nomeBeneficiario", "required": true, "span": 3}
+                    ,{"nome": "matricula", "required": true, "span": 1}
                     ,{"nome": "assuntoMonitoramento", "required": true, "span": 2}
-                    ,{"nome": "tipoTerapia", "required": true, "span": 2}
-                    ,{"nome": "nomeClassificacao", "required": true, "span": 3}
+
+                    ,{"nome": "tipoTerapia", "required": false, "span": 2}
+                    ,{"nome": "nomeClassificacao", "required": true, "span": 4}
+                    
                     ,{"nome": "observacoes", "required": true, "span": 6}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],

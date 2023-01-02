@@ -251,7 +251,17 @@
                     ,{"nome": "upload", "required": true, "span": 6}
                 ],
                 "validaDuplicidade": [ "empresa", "competencia" ]
-            }
+            },
+            {
+                "codigo": 4.6,
+                "descricao": "Envio de notas fiscais",
+                "campos": [                    
+                    {"nome": "empresa", "required": true, "span": 4}
+                    ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "upload", "required": false, "span": 6}
+                ],
+                "validaDuplicidade": []
+            },
         ]
     },
     {

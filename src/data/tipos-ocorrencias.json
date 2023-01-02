@@ -261,7 +261,7 @@
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": []
-            },
+            }
         ]
     },
     {

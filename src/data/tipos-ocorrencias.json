@@ -237,7 +237,7 @@
                     ,{"nome": "competencia", "required": true, "span": 2}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
-                "validaDuplicidade": [ "empresa", "competencia" ]
+                "validaDuplicidade": []
             },
             {
                 "codigo": 4.5,

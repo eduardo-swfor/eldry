@@ -134,11 +134,17 @@ export default function Home() {
           { nome: 'status', tipo: 'string', titulo: 'Status' },
           { nome: 'sequencia', tipo: 'string', titulo: 'Sequência' },
           { nome: 'tipoOcorrencia', tipo: 'string', titulo: 'Tipo' },
+          { nome: 'qtdArquivos', tipo: 'string', titulo: 'Qtd arquivos' },
           { nome: 'descricaoOcorrencia', tipo: 'string', titulo: 'Descrição' },
           { nome: 'dataUltimaAtualizacao', tipo: 'date', titulo: 'Atualizado em' },
         ]}
         titulo='Minhas pendências'
-        dados={minhasPendencias}
+        dados={minhasPendencias.map(item => {
+          return {
+            ...item,
+            qtdArquivos: item.arquivos?.length || 0
+          }
+        })}
         icone={IconeExclamacao(5)}
       />
 
@@ -155,11 +161,17 @@ export default function Home() {
           { nome: 'sequencia', tipo: 'string', titulo: 'Sequência' },
           { nome: 'status', tipo: 'string', titulo: 'Status' },
           { nome: 'tipoOcorrencia', tipo: 'string', titulo: 'Tipo' },
+          { nome: 'qtdArquivos', tipo: 'string', titulo: 'Qtd arquivos' },
           { nome: 'descricaoOcorrencia', tipo: 'string', titulo: 'Descrição' },
           { nome: 'dataUltimaAtualizacao', tipo: 'date', titulo: 'Atualizado em' },
         ]}
         titulo='Aguardando atualizações'
-        dados={aguardardandoAcao}
+        dados={aguardardandoAcao.map(item => {
+          return {
+            ...item,
+            qtdArquivos: item.arquivos?.length || 0
+          }
+        })}
         icone={IconeRelogio(5)}
       />
 

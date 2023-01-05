@@ -202,8 +202,9 @@
                 "codigo": 4.1,
                 "descricao": "Apontamento de folha de pagamento",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 4}
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [ "empresa", "competencia" ]
@@ -212,8 +213,9 @@
                 "codigo": 4.2,
                 "descricao": "Aprovação da conferência da folha",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 4}
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": [ "empresa", "competencia" ]
@@ -222,8 +224,9 @@
                 "codigo": 4.3,
                 "descricao": "Envio dos extratos",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 6}
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
                     ,{"nome": "banco", "required": true, "span": 4}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
@@ -233,8 +236,9 @@
                 "codigo": 4.4,
                 "descricao": "Planilha financeira conciliada",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 4}
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": []
@@ -243,11 +247,12 @@
                 "codigo": 4.5,
                 "descricao": "Valores para efetuar provisões",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 4}                    
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
-                    ,{"nome": "contigencia", "required": false, "span": 2}
-                    ,{"nome": "receita", "required": false, "span": 2}
-                    ,{"nome": "provisao", "required": false, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
+                    ,{"nome": "contigencia", "required": false, "span": 1}
+                    ,{"nome": "receita", "required": false, "span": 1}
+                    ,{"nome": "provisao", "required": false, "span": 1}
                     ,{"nome": "upload", "required": true, "span": 6}
                 ],
                 "validaDuplicidade": [ "empresa", "competencia" ]
@@ -256,8 +261,9 @@
                 "codigo": 4.6,
                 "descricao": "Envio de notas fiscais",
                 "campos": [                    
-                    {"nome": "empresa", "required": true, "span": 4}
+                    {"nome": "empresa", "required": true, "span": 2}
                     ,{"nome": "competencia", "required": true, "span": 2}
+                    ,{"nome": "origemEmissao", "required": true, "span": 2}
                     ,{"nome": "upload", "required": false, "span": 6}
                 ],
                 "validaDuplicidade": []

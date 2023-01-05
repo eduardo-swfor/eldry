@@ -145,14 +145,6 @@ export default function FormInclusaoApontamento({ ocorrencia=null, className, in
                         }}
                     />
 
-                    <SelectRespostaAutomatica
-                        value={respostaAutomatica}
-                        onChange={valor => {
-                            setRespostaAutomatica(valor)
-                            dispatch({resposta: valor})
-                        }}
-                    />
-
                     <div className='w-full flex flex-col mt-4'>
                         <div {...getRootProps({className: 'dropzone'})} className={`
                             w-full flex flex-col flex-wrap p-6 border-dashed  border-2
